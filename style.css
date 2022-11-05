@@ -12,6 +12,8 @@ body{
 body{
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*------------------------
@@ -21,6 +23,7 @@ body{
     background-color:#FFFFFF;
     width: 870px;
     margin-top: 36px;
+    border-radius: 5px;
 }
 
 .top-players{
@@ -71,7 +74,7 @@ top-players-end
 .top-blogs{
     margin: 30px 33px 42px 31px;
 }
-.top-blogs-title{
+.top-blogs-title ,.latest-course-title{
     margin-bottom:  31px;
     font-size: 24px;
     color: #562EFF;
@@ -112,4 +115,64 @@ top-players-end
 
 /*-----------------
     top-blogs-end
+------------------ */
+
+
+/*-----------------------------------
+    2nd-section-start-latest courses
+-------------------------------------- */
+
+.latest-course{
+    margin: 23px 36px 22px 33px;
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 25.13px;
+}
+.course{
+    box-shadow: 15px 16px 32px -8px rgba(227,225,225,0.75);
+    -webkit-box-shadow: 15px 16px 32px -8px rgba(227,225,225,0.75);
+    -moz-box-shadow: 15px 16px 32px -8px rgba(227,225,225,0.75);
+    border-radius: 10px;
+    padding: 10px;
+}
+.course-image{
+    width: 224px;
+    height: 104px;
+}
+.course-title{
+    font-weight: 500;
+    font-size: 20.0336px;
+    color: #1E1E1E;
+    margin-top: 19.23px;
+}
+.author-name{
+    font-size: 14.6913px;
+    font-weight: 400;
+    color: #ED6B4F;
+    margin-top: 7.17px;
+}
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 19.25px;
+}
+
+.fa-star{
+    color: #FFC014;
+}
+.non-rating-star{
+    color: #AEAEAE;
+}
+.course-duration{
+    color: #FF4A60;
+    background-color: #FFE4E8;
+    border-radius: 14.6913px;
+    padding: 5px;
+}
+
+/*-----------------
+    latest course-end
 ------------------ */
