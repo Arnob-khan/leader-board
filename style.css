@@ -6,4 +6,51 @@
 body{
     font-family: 'Poppins', sans-serif;
     font-family: 'Roboto', sans-serif;
+    background-color:#F3F1FF;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+/*------------------------
+     1st section start 
+--------------------------*/
+.container{
+    background-color:#FFFFFF;
+    width: 870px;
+    margin-top: 36px;
+}
+
+.top-players{
+    margin: 33px 33px 42px 30px;
+    
+}
+.top-player-title{
+   font-size: 24px;
+   font-weight: 500;
+   color: #562EFF;
+   margin-bottom: 40px;
+
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 29px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+
+.player-image{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+
 }
